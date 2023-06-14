@@ -43,11 +43,12 @@ func (q *queue[T]) Push(val T) {
 
 // get the header and delete it from the list
 func (q *queue[T]) Pop() T {
+	var empty T
 	if q.size > 1 {
 	} else if q.size == 1 {
 		q.tail = nil
 	} else {
-		return nil
+		return empty
 	}
 	pop := q.head
 	q.head = q.head.Next

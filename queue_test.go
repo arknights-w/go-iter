@@ -2,7 +2,8 @@ package iter_test
 
 import (
 	"fmt"
-	"iter"
+	"go-iter"
+
 	"testing"
 )
 
